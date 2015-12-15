@@ -1,10 +1,12 @@
-angular.module('WatershipDown'), [
-  'ngRoute',
-  'templates'
-]).config(function($routeProvider, $locationProvider) {
-  $routeProvider.when('/', {
-    templateUrl: 'home.html',
-    controller: 'HomeCtrl'
+angular
+  .module('WatershipDown', [
+    'ngRoute',
+    'templates'
+  ]).config(function($routeProvider, $locationProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'home.html',
+        controller: 'HomeCtrl'
+      });
+    $locationProvider.html5Mode(true);
   });
-  $locationProvider.html5mode(true);
-});
