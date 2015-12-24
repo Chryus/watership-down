@@ -46,6 +46,6 @@ end
 
 group :development do
   gem 'bower-rails'
-  gem 'angular-rails-templates'
+  gem 'listen', '~> 3.0'
 end
 
