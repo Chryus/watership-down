@@ -44,8 +44,7 @@ group :development, :test do
   gem 'spring'
 end
 
-group :development do
-  gem 'bower-rails'
-  gem 'listen', '~> 3.0'
-end
-
+#angular management
+gem 'angular-rails-templates'
+gem 'bower-rails'
+gem 'listen', '~> 2.7'
